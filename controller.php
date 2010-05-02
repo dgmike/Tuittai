@@ -18,7 +18,7 @@ class Home
         $chave = array(post('login'), post('senha'));
         if ($chave == array('teste', 'teste')) {
             $_SESSION['login'] = $chave;
-            header('Location: '.BASE_URL.'/');
+            redirect();
         }
     }
 }
@@ -29,7 +29,7 @@ class Logout
     {
         $_SESSION = array();
         session_destroy();
-        header('Location: '.BASE_URL.'/');
+        redirect();
     }
 
     public function post()

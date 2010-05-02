@@ -15,3 +15,8 @@ function get($key, $default='')
     }
     return $default;
 }
+
+function redirect($url='')
+{
+    header('Location: '.BASE_URL.$url);
+}
