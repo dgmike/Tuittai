@@ -7,5 +7,6 @@ include 'model.php';
 include 'helper.php';
 
 app(array(
-    '^/?$' => 'Home',
+    '^/logout/?$' => 'Logout',
+    '^/?$'        => 'Home',
 ));

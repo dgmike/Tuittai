@@ -22,3 +22,18 @@ class Home
         }
     }
 }
+
+class Logout
+{
+    public function get()
+    {
+        $_SESSION = array();
+        session_destroy();
+        header('Location: '.BASE_URL.'/');
+    }
+
+    public function post()
+    {
+        $this->get();
+    }
+}
