@@ -1,4 +1,5 @@
 <?php
+session_start();
 
 class Home
 {
@@ -12,5 +13,12 @@ class Home
             die;
         }
     }
-
+    public function post()
+    {
+        $chave = array(post('login'), post('senha'));
+        if ($chave == array('teste', 'teste')) {
+            $_SESSION['login'] = $chave;
+            header('Location: '.BASE_URL.'/');
+        }
+    }
 }
