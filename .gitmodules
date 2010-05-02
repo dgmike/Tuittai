@@ -1,0 +1,3 @@
+[submodule "cappuccino"]
+	path = cappuccino
+	url = git://github.com/280north/cappuccino.git
