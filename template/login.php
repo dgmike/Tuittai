@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <title>Tuittai - Login</title>
+    <link media="all" href="<?php echo BASE_URL; ?>static/css/blueprint/screen.css" type="text/css" rel="stylesheet" />
 </head>
 <body>
 
